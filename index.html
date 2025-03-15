@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>技術力プレゼンのポートフォリオ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+    integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@next/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <h1 class="intro" id="intro">技術力プレゼンのポートフォリオ</h1>
+  <h2 class="intro" id="intro2">前提</h2>
+  <h3 class="intro" id="intro3">
+    &nbsp;&nbsp;IT会社（今回はDIG）へ自分を売り込むことを想定。<br>
+    &nbsp;&nbsp;自身のコーディングスキルのアピールに加え、将来DIGで実現したいビジョンを示す。
+  </h3>
+
+  <h3 class="intro" id="intro4">【コーディンングスキル】</h3>
+  <div class="accordion" id="js-accordion">
+    <a class="accordion-trigger">
+      スキル①：トグル表示
+    </a>
+    <div class="accordion-contents">
+      クリックイベントを実装。IF関数でクリックしたらCSSのdisplay(block/none)が切り替わるようにした。<br>
+
+
+      <img src="toggle1.png"><br><br>
+      classを独学してリファクタリング(同じようなトグル表示をコピーできるようにした)<br>
+      エラーが起きた場合、現象確認がしやすいようにIF関数を入れリファクタリング。
+      <img src="toggle2.png">
+    </div>
+    <div class="accordion">
+      <a class="accordion-trigger">
+        スキル②：グラフ作成
+      </a>
+      <div class="accordion-contents">
+        Chart.jsを活用。webのリンクをHTMLに書き込めば利用できると知った。<br>
+        <img src="graph1.png"><br><br>        
+        学習記録表は実際の学習時間。カーソルを合わせると詳細表示ができる。<br>
+        <div style="width:750px">
+          <canvas id="mychart"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br><br>
+  <h3 class="intro" id="intro5">【実現したいビジョン】</h3>
+  <div class="accordion" id="js-faq">
+    <p class="accordion-trigger">
+      設計の現場で抱えてる悩みを技術的に解決するツールを作りたい    
+    </p>
+    <div class="accordion-contents">
+      <img src="problem.png"><br><br>   
+    </div>
+    <div class="accordion">
+      <p class="accordion-trigger">
+        技術力を高めるために直近やること
+      </p>
+      <div class="accordion-contents">
+        Google&TOYOTAのコラボイベント「AIハッカソン」にエントリー（5/21@中日ホール）。早速ツールの要素技術開発を検討中。<br>
+        （画像認識技術の実装のために、VertexAI, Googlecolaboratory, python勉強中）<br>
+        DIGの本研修でプログラミング基礎を学び、自信がついたのでチャレンジできました。<br><br>
+        DIGインストラクターのみなさま、研修を受けることを了承いただいた上司の方々、ありがとうございました。
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <script type="text/javascript" src="script.js"></script>
+  </div>
+</body>
+
+</html>
